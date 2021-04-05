@@ -1,22 +1,10 @@
-package leetcode
+package easy
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
-
-func twoSum(numbers []int, target int) []int {
-	table := make(map[int]int, len(numbers))
-
-	for j, num := range numbers {
-		if i, ok := table[num]; ok {
-			return []int{i + 1, j + 1}
-		}
-		table[target-num] = j
-	}
-	return nil
-}
 
 func TestTwoSum(t *testing.T) {
 	cases := []struct {

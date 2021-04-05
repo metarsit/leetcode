@@ -1,23 +1,10 @@
-package leetcode
+package easy
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
-
-func reverseString(s []byte) {
-	rightCur := len(s) - 1
-	leftCur := 0
-
-	for leftCur <= rightCur {
-		s[rightCur], s[leftCur] =
-			s[leftCur], s[rightCur]
-
-		rightCur--
-		leftCur++
-	}
-}
 
 func TestReverseString(t *testing.T) {
 	cases := []struct {

@@ -1,24 +1,10 @@
-package leetcode
+package easy
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
-
-func fib(n int) int {
-	var table = map[int]int{
-		0: 0,
-		1: 1,
-	}
-
-	if corr, ok := table[n]; ok {
-		return corr
-	}
-	result := fib(n-1) + fib(n-2)
-	table[n] = result
-	return result
-}
 
 func TestFib(t *testing.T) {
 	cases := []struct {
