@@ -11,10 +11,8 @@ func reverseString(s []byte) {
 	leftCur := 0
 
 	for leftCur <= rightCur {
-		tmpRight := s[rightCur]
-
-		s[rightCur] = s[leftCur]
-		s[leftCur] = tmpRight
+		s[rightCur], s[leftCur] =
+			s[leftCur], s[rightCur]
 
 		rightCur--
 		leftCur++

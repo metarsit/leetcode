@@ -15,7 +15,7 @@ func threeConsecutiveOdds(arr []int) bool {
 			continue
 		}
 
-		consecOdd += 1
+		consecOdd++
 		if consecOdd == 3 {
 			return true
 		}

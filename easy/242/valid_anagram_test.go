@@ -22,14 +22,14 @@ func isAnagramWithoutLibrary(s, t string) bool {
 		if _, ok := table[currS]; !ok {
 			table[currS] = 1
 		} else {
-			table[currS] += 1
+			table[currS]++
 		}
 
 		currT := tb[i]
 		if _, ok := table[currT]; !ok {
 			table[currT] = -1
 		} else {
-			table[currT] -= 1
+			table[currT]--
 		}
 	}
 
